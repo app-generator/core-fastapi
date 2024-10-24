@@ -5,7 +5,7 @@ FastAPI is a powerful and modern web framework for building API with Python 3. W
 This document dives into why FastAPI is a top choice for building APIs, along with some of its drawbacks. Plus, this will guide you through creating a simple, secure API with FastAPI, so you can see its power in action!
 
 WHY TO USE FASTAPI
-^^^^^^^^^^^^^^^^^^s
+^^^^^^^^^^^^^^^^^^
 - **Performance**
     FastAPI is constructed with Starlette in the web portion and Pydantic concerning the data - parts related.The two are highly optimized libraries.Therefore, FastAPI performance is closed to that
     It is excellent for applications requiring high throughput or immediate processing, since it can process huge numbers of intuition sparsely.
