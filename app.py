@@ -22,7 +22,6 @@ fake_users_db = {
 # Dependency to get the current user based on token
 def get_current_user(token: str = Depends(oauth2_scheme)):
     username = decode_token(token)
-    print(username)
     if not username:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
     user = fake_users_db.get(username)
@@ -37,7 +36,6 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
     user = fake_users_db.get(form_data.username)
     if not user or not verify_password(form_data.password, user["hashed_password"]):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Incorrect username or password")
-    print("***********USERNAME", form_data.username)
     access_token = create_access_token(data={"sub": form_data.username}, expires_delta=timedelta(minutes=30))
     return {"access_token": access_token, "token_type": "bearer"}
 
