@@ -1,20 +1,23 @@
+# [Getting Started with FastAPI](https://app-generator.dev/docs/technologies/fastapi/index.html)
 
-# FastAPI Authentication Project
+Coding sample for **[Getting Started with FastAPI documentation page](https://app-generator.dev/docs/technologies/fastapi/index.html)**.  A simple FastAPI project demonstrating JWT authentication with token-based access. This project includes endpoints for user sign-up, login, and accessing secure and public data.
 
-A simple FastAPI project demonstrating JWT authentication with token-based access. This project includes endpoints for user sign-up, login, and accessing secure and public data.
+> 👉 Get [Support](https://app-generator.dev/ticket/create/) via `email` & `Discord`
+
+<br />
 
 ## Prerequisites
 
 - Python 3.7+
 - `pip` for package management
 
-
-
 **Install dependencies**:
 
    ```bash
    pip install fastapi sqlalchemy pydantic passlib[bcrypt] python-jose uvicorn
    ```
+
+<br />
 
 ## Setting Up the Database
 
@@ -23,6 +26,8 @@ This project uses SQLite for the database.
 1. **Create Database and Tables**:
 
 When you run the project the database and table would automatically be created.
+
+<br />
 
 ## Running the Project
 
@@ -33,6 +38,8 @@ uvicorn main:app --reload
 ```
 
 The server will be available at `http://127.0.0.1:8000`.
+
+<br />
 
 ## API Endpoints
 
@@ -61,6 +68,8 @@ Registers a new user with a `username` and `password`.
       "password": "newpassword"
   }'
   ```
+
+<br />
 
 ### 2. **Login** - `/token`
 
@@ -92,6 +101,8 @@ Authenticates a user and returns a JWT token.
   }
   ```
 
+<br />
+
 ### 3. **Get Secure Data** - `/secure-data`
 
 Returns secure data and requires a valid JWT token for access.
@@ -119,6 +130,8 @@ Returns secure data and requires a valid JWT token for access.
   }
   ```
 
+<br />
+
 ### 4. **Get Public Data** - `/public`
 
 An open endpoint that does not require authentication.
@@ -140,6 +153,8 @@ An open endpoint that does not require authentication.
   }
   ```
 
+<br />
+
 ## Project Structure
 
 ```
@@ -151,6 +166,8 @@ An open endpoint that does not require authentication.
 └── README.md         # Project documentation
 ```
 
+<br />
+
 ## Dependencies
 
 - `fastapi` - Web framework for building APIs.
@@ -160,10 +177,15 @@ An open endpoint that does not require authentication.
 - `python-jose` - For handling JWT encoding and decoding.
 - `uvicorn` - ASGI server for FastAPI.
 
-
+<br />
 
 ## Notes
 
 - Replace `"YOUR_ACCESS_TOKEN"` in `curl` examples with the actual token obtained from the login endpoint.
 - Update `DATABASE_URL` in `database.py` if you switch to another database (e.g., PostgreSQL).
 - To access Swagger documentation, visit: `http://127.0.0.1:8000/docs`.
+
+<br />
+
+---
+**[Getting Started with FastAPI](https://app-generator.dev/docs/technologies/fastapi/index.html)** - Coding sample provided by **[App Generator](https://app-generator.dev/)** 
