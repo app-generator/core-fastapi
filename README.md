@@ -2,7 +2,10 @@
 
 Coding sample for **[Getting Started with FastAPI documentation page](https://app-generator.dev/docs/technologies/fastapi/index.html)**.  A simple FastAPI project demonstrating JWT authentication with token-based access. This project includes endpoints for user sign-up, login, and accessing secure and public data.
 
-> 👉 Get [Support](https://app-generator.dev/ticket/create/) via `email` & `Discord`
+> 👉 For more [FastAPI Resources](https://app-generator.dev/docs/technologies/fastapi.html) please access:
+
+- [Getting Started with FastAPI](https://app-generator.dev/docs/technologies/fastapi/index.html)
+- [FastAPI Cheatsheet](https://app-generator.dev/docs/technologies/fastapi/cheatsheet.html)   
 
 <br />
 
